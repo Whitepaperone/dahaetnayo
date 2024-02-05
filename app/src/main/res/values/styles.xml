@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- Base application theme. -->
+<!--   액션바 다시 생성 Theme.MaterialComponents.Light.DarkActionBar-->
+    <style name="Basic" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/basicPrimary</item>
+        <item name="colorPrimaryDark">@color/basicPrimaryDark</item>
+        <item name="colorAccent">@color/basicAccent</item>
+        <item name="android:windowBackground">@color/basicBackground</item>
+        <item name="android:navigationBarColor">@color/basicnavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/basicPrimaryDark</item>
+    </style>
+
+    <style name="Icecream" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/icecreamPrimary</item>
+        <item name="colorPrimaryDark">@color/icecreamPrimaryDark</item>
+        <item name="colorAccent">@color/icecreamAccent</item>
+        <item name="android:windowBackground">@color/icecreamBackground</item>
+        <item name="android:navigationBarColor">@color/icecreamnavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/icecreamPrimaryDark</item>
+    </style>
+
+    <style name="Red" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/redPrimary</item>
+        <item name="colorPrimaryDark">@color/redPrimaryDark</item>
+        <item name="colorAccent">@color/redAccent</item>
+        <item name="android:windowBackground">@color/redBackground</item>
+        <item name="android:navigationBarColor">@color/rednavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/redPrimaryDark</item>
+    </style>
+
+    <style name="Pink" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/pinkPrimary</item>
+        <item name="colorPrimaryDark">@color/pinkPrimaryDark</item>
+        <item name="colorAccent">@color/pinkAccent</item>
+        <item name="android:windowBackground">@color/pinkBackground</item>
+        <item name="android:navigationBarColor">@color/pinknavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/pinkPrimaryDark</item>
+    </style>
+    <style name="Yellow" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/yellowPrimary</item>
+        <item name="colorPrimaryDark">@color/yellowPrimaryDark</item>
+        <item name="colorAccent">@color/yellowAccent</item>
+        <item name="android:windowBackground">@color/yellowBackground</item>
+        <item name="android:navigationBarColor">@color/yellownavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/yellowPrimaryDark</item>
+    </style>
+
+
+    <style name="Green" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/greenPrimary</item>
+        <item name="colorPrimaryDark">@color/greenPrimaryDark</item>
+        <item name="colorAccent">@color/greenAccent</item>
+        <item name="android:windowBackground">@color/greenBackground</item>
+        <item name="android:navigationBarColor">@color/greennavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/greenPrimaryDark</item>
+    </style>
+
+    <style name="Sea" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/seaPrimary</item>
+        <item name="colorPrimaryDark">@color/seaPrimaryDark</item>
+        <item name="colorAccent">@color/seaAccent</item>
+        <item name="android:windowBackground">@color/seaBackground</item>
+        <item name="android:navigationBarColor">@color/seanavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/seaPrimaryDark</item>
+    </style>
+
+
+    <style name="Blue" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/bluePrimary</item>
+        <item name="colorPrimaryDark">@color/bluePrimaryDark</item>
+        <item name="colorAccent">@color/blueAccent</item>
+        <item name="android:windowBackground">@color/blueBackground</item>
+        <item name="android:navigationBarColor">@color/bluenavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/bluePrimaryDark</item>
+    </style>
+
+
+
+    <style name="Purple" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/purplePrimary</item>
+        <item name="colorPrimaryDark">@color/purplePrimaryDark</item>
+        <item name="colorAccent">@color/purpleAccent</item>
+        <item name="android:windowBackground">@color/purpleBackground</item>
+        <item name="android:navigationBarColor">@color/purplenavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/purplePrimaryDark</item>
+    </style>
+
+    <style name="Violet" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/violetPrimary</item>
+        <item name="colorPrimaryDark">@color/violetPrimaryDark</item>
+        <item name="colorAccent">@color/violetAccent</item>
+        <item name="android:windowBackground">@color/violetBackground</item>
+        <item name="android:navigationBarColor">@color/violetnavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/violetPrimaryDark</item>
+    </style>
+
+    <style name="Coffee" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/coffeePrimary</item>
+        <item name="colorPrimaryDark">@color/coffeePrimaryDark</item>
+        <item name="colorAccent">@color/coffeeAccent</item>
+        <item name="android:windowBackground">@color/coffeeBackground</item>
+        <item name="android:navigationBarColor">@color/coffeenavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/coffeePrimaryDark</item>
+    </style>
+
+
+
+
+    <!-- 수정용 -->
+    <style name="Fall" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/fallPrimary</item>
+        <item name="colorPrimaryDark">@color/fallPrimaryDark</item>
+        <item name="colorAccent">@color/fallAccent</item>
+        <item name="android:windowBackground">@color/fallBackground</item>
+        <item name="android:navigationBarColor">@color/fallnavigationBarColor</item>
+        <item name="bottomAppBarStyle">@color/fallPrimaryDark</item>
+
+    </style>
+
+    <style name="FabDiamondOverlay" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="BtnStroke" parent="Widget.AppCompat.Button">
+        <item name="strokeWidth">3dp</item>
+        <item name="cornerSize">8dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="strokeColor">?colorAccent</item>
+    </style>
+    <style name="CardViewStyle" parent="CardView">
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">16dp</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="strokeColor">?colorAccent</item>
+    </style>
+
+
+</resources>

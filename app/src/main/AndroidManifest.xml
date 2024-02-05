@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.finalproj">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Basic"
+        tools:ignore="ExtraText">
+        <receiver android:name=".setting.ClockAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/clock_app_widget_info" />
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7662065578780385~2662200121" />
+
+        <activity android:name=".store.store_Activity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PetActivity" />
+        <activity android:name=".SnackActivity" />
+        <activity android:name=".TodoActivity" />
+        <activity android:name=".setting.register_Activity" />
+        <activity android:name=".setting.change_Activity" />
+        <activity android:name=".setting.password_Activity" />
+        <activity android:name=".setting.setting_basic_Activity" />
+        <activity android:name=".setting.use_alarm_Activity" />
+
+        <receiver
+            android:name=".setting.AlarmReciver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name=".setting.BootAlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".setting.AlarmReceiver2"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".firstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+
+</manifest>

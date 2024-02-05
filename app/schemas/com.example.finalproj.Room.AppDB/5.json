@@ -1,0 +1,64 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 5,
+    "identityHash": "d4d2fba685f4604a63bc0609a287e7fa",
+    "entities": [
+      {
+        "tableName": "TodoItemEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`todoitemId` INTEGER PRIMARY KEY AUTOINCREMENT, `todoitemContent` TEXT, `todoitemDate` TEXT, `todoitemEndDate` TEXT, `todoflag` INTEGER NOT NULL, `todoitemChecked` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "todoitemId",
+            "columnName": "todoitemId",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoitemContent",
+            "columnName": "todoitemContent",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoitemDate",
+            "columnName": "todoitemDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoitemEndDate",
+            "columnName": "todoitemEndDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoflag",
+            "columnName": "todoflag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "todoitemChecked",
+            "columnName": "todoitemChecked",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "todoitemId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd4d2fba685f4604a63bc0609a287e7fa')"
+    ]
+  }
+}

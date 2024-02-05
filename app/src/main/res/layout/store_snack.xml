@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/store"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignBaseline="@+id/coinView"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/coinView"
+        android:layout_width="78dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="16dp"
+        android:drawableLeft="@drawable/coin"
+        android:textSize="24sp"
+        android:text = "coin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/store_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        app:tabSelectedTextColor="@android:color/darker_gray"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabMinWidth="136dp"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem_snack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="간식"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="테마" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem_dog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="강아지" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/store_tab"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"/>
+
+
+</RelativeLayout>

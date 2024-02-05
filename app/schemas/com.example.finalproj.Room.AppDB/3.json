@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "0a5623ed1b8b0e012a687c3086bd8c75",
+    "entities": [
+      {
+        "tableName": "TodoItemEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`todoitemId` INTEGER PRIMARY KEY AUTOINCREMENT, `todoitemContent` TEXT, `todoitemDate` INTEGER, `todoitemChecked` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "todoitemId",
+            "columnName": "todoitemId",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoitemContent",
+            "columnName": "todoitemContent",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoitemDate",
+            "columnName": "todoitemDate",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoitemChecked",
+            "columnName": "todoitemChecked",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "todoitemId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0a5623ed1b8b0e012a687c3086bd8c75')"
+    ]
+  }
+}

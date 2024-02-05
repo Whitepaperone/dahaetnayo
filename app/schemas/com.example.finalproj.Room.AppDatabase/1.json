@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "0366132e132a5f4769d7ff6414613f58",
+    "entities": [
+      {
+        "tableName": "TodoEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`todoIdx` INTEGER PRIMARY KEY AUTOINCREMENT, `todoDate` INTEGER, `todoTitle` TEXT NOT NULL, `todoContent` TEXT, `todoChecked` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "todoIdx",
+            "columnName": "todoIdx",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoDate",
+            "columnName": "todoDate",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoTitle",
+            "columnName": "todoTitle",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "todoContent",
+            "columnName": "todoContent",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "todoChecked",
+            "columnName": "todoChecked",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "todoIdx"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0366132e132a5f4769d7ff6414613f58')"
+    ]
+  }
+}

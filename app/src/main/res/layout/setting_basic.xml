@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/coinView"
+            android:layout_width="78dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawableLeft="@drawable/coin"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/setting_ads"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="5dp"
+            android:drawableLeft="@drawable/coin"
+            android:paddingLeft="20dp"
+            android:text=" 광고 보기"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setting_alarm" />
+
+        <Button
+            android:id="@+id/setting_alarm"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="5dp"
+            android:drawableLeft="@android:drawable/ic_menu_recent_history"
+            android:paddingLeft="18dp"
+            android:text="알람 설정"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setting_password" />
+
+        <Button
+            android:id="@+id/setting_password"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="5dp"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:paddingLeft="23dp"
+            android:text="비밀번호 설정"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.circularreveal.CircularRevealFrameLayout
+        android:id="@+id/sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@android:color/white"
+        android:visibility="invisible"
+        android:layout_margin="20dp"
+        app:layout_behavior="com.google.android.material.transformation.FabTransformationSheetBehavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="?android:windowBackground"
+            android:padding="15dp"
+            android:text="TodoList" />
+
+        <TextView
+            android:id="@+id/btn_pet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="?android:windowBackground"
+            android:padding="15dp"
+            android:text="Pet" />
+
+        <TextView
+            android:id="@+id/setting_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="?android:windowBackground"
+            android:padding="15dp"
+            android:text="Store" />
+
+        <TextView
+            android:id="@+id/tvClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="?android:navigationBarColor"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Close" />
+
+
+    </LinearLayout>
+</com.google.android.material.circularreveal.CircularRevealFrameLayout>
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+android:id="@+id/fabMenu"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="bottom|end"
+android:layout_margin="20dp"
+android:src="@drawable/ic_add_black_24dp"
+app:backgroundTint="?colorAccent"
+app:layout_anchorGravity="center" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
