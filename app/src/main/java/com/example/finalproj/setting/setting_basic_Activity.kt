@@ -80,7 +80,7 @@ class setting_basic_Activity : AppCompatActivity() {
 
 
         fun createAndLoadRewardedAd(): RewardedAd {
-            rewardedAd = RewardedAd(this, "ca-app-pub-3940256099942544/5224354917")
+            rewardedAd = RewardedAd(this, "ca-app-pub-")
             val adLoadCallback = object: RewardedAdLoadCallback() {
                 override fun onRewardedAdLoaded() {
                     // Ad successfully loaded.
